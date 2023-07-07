@@ -12,8 +12,10 @@ struct GameView: View {
     let accentColor = Color(red:48/255, green:105/255, blue:240/255)
     var body: some View {
         ZStack{
+            
             mainColor.ignoresSafeArea()
             VStack{
+                
                 Text("1/10")
                     .font(.callout)
                     .multilineTextAlignment(.leading)
@@ -22,6 +24,7 @@ struct GameView: View {
                     .font(.largeTitle)
                     .bold()
                     .multilineTextAlignment(.leading)
+                
                 Spacer()
                 HStack{
                     Button(action: {
@@ -66,6 +69,7 @@ struct GameView: View {
                     })
                 }
             }
+            
         }
         .foregroundColor(.white)
     }

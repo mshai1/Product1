@@ -24,12 +24,13 @@ struct WelcomeUI: View {
                                                .padding()
                                        }
                                        Spacer()
+                                       Spacer()
                                        NavigationLink(
                                            destination: GameView(),
                                            label: {
                                                HStack {
                                                    Spacer()
-                                                   Text("Okay, let's go!")
+                                                   Text( "Okay, let's go!")
                                                        .font(.body)
                                                        .bold()
                                                        .padding()
